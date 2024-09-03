@@ -8,7 +8,7 @@ from .db import create_db_and_tables, engine
 from .models.content import Content
 from .security import User
 
-cli = typer.Typer(name="project_name API")
+cli = typer.Typer(name="ah_datahub_szapi API")
 
 
 @cli.command()
@@ -20,7 +20,7 @@ def run(
 ):  # pragma: no cover
     """Run the API server."""
     uvicorn.run(
-        "project_name.app:app",
+        "ah_datahub_szapi.app:app",
         host=host,
         port=port,
         log_level=log_level,

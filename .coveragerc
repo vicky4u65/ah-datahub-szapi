@@ -1,8 +1,8 @@
 [run]
-source = project_name
+source = ah_datahub_szapi
 
 [report]
 omit =
     */python?.?/*
     */site-packages/nose/*
-    project_name/__main__.py
+    ah_datahub_szapi/__main__.py
